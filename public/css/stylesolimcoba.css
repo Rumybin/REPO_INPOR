@@ -1,0 +1,153 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menggunakan Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #008C9E, #008C9E);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-left: 50px; /* Atur jarak dari kiri */
+    margin-top: 20px; /* Atur jarak dari atas */
+    font-size: 2rem; /* Atur ukuran font jika diperlukan */
+    color: #003366; /* Ubah warna teks sesuai desain */
+}
+
+/* Tombol di atas */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.button-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00ADB5;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #FF7B00;
+    transform: scale(1.05);
+}
+
+/* Tombol Back */
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #00adb5;
+    color: white;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #FF7B00;
+}
+
+/* Program container using CSS grid */
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom tetap */
+    gap: 20px; /* Jarak antar kotak */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 20px auto; /* Menempatkan di tengah halaman */
+}
+
+/* Each program box (kotak) */
+.program-box {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.program-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling untuk judul kotak */
+.program-box h3 {
+    font-size: 1.75rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+/* Footer Sticky */
+footer {
+    background-color: #222831;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content .logo img {
+    width: 100px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #FFD700;
+}
+
+/* Styling responsif */
+@media only screen and (max-width: 900px) {
+    .program-container {
+        grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk layar kecil */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .program-container {
+        grid-template-columns: 1fr; /* Satu kolom untuk layar sangat kecil */
+    }
+}
