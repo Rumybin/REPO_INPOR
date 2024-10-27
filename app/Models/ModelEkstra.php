@@ -8,7 +8,7 @@ class ModelEkstra extends Model
 {
     protected $table = 'db_ekstra';
     protected $primaryKey = 'kode';
-    protected $allowedFields = ['Nama', 'Hari', 'type'];
+    protected $allowedFields = ['Nama', 'Hari', 'type', 'des', 'gambar']; // Tambahkan kolom 'gambar' dan 'deskripsi'
 
     public function getEkstraByDay($hari)
     {
@@ -17,14 +17,16 @@ class ModelEkstra extends Model
             ->where('Hari', $hari)
             ->findAll();
     }
-    public function getallNama()
+
+    public function getAllNama()
     {
         return $this->select('Nama')->findAll();
     }
 
     public function getEkstraByType($type)
     {
-        return $this->select('Nama')
+        // Ambil kolom yang diperlukan
+        return $this->select('Nama, des, gambar') // Sesuaikan kolom
             ->where('type', $type)
             ->findAll();
     }
