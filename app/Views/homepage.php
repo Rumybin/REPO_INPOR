@@ -18,11 +18,12 @@
         <h2>INI EKSTRA</h2>
 
         <!-- Tombol lonjong -->
-        <div class="button-container">
-            <a href="/home" class="rounded-button">Home</a>
-            <a href="/jadwal" class="rounded-button">Jadwal</a>
-            <a href="/berita" class="rounded-button">Berita</a>
-        </div>
+        <!-- Tombol Home, Jadwal, Berita di atas -->
+    <div class="button-container">
+        <a href="/">Home</a>
+        <a href="/jadwal">Jadwal</a>
+        <a href="/berita">Berita</a>
+    </div>
 
         <!-- Slideshow section -->
         <div class="slideshow-container">
@@ -57,14 +58,21 @@
             </a>
 
             <!-- Small boxes -->
+            
             <div class="small-box-container">
+           
                 <div class="box small-box">
+                <a href="/sport">
                     <img src="<?= base_url('images/alam.jpg'); ?>" alt="Alam Image">
-                    <div class="overlay-text-small">Alam</div>
+                    <div class="overlay-text-small">SPORT</div>
+                </a>
                 </div>
+            
                 <div class="box small-box">
+                <a href="/diniyah"></a>
                     <img src="<?= base_url('images/olom.jpg'); ?>" alt="Olom Image">
-                    <div class="overlay-text-small">Olom</div>
+                    <div class="overlay-text-small">DINIYAH</div>
+                </a>
                 </div>
             </div>
         </div> <!-- Tutup container -->

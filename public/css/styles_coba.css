@@ -9,16 +9,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    background-color: #008C9E;
+    background-color: #F6FCDF;
     color: black;
 }
 
 /* Header */
 header {
     width: 100%;
-    background-color: #222831;
+    background-color: #1A1A19;
     color: white;
-    height: 40px;
+    height: 90px;
     text-align: center;
     line-height: 40px;
 }
@@ -39,33 +39,36 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Tombol Lonjong */
+/* Tombol di atas */
 .button-container {
-    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px;
 }
 
-.rounded-button {
-    display: inline-block;
-    padding: 10px 30px;
-    margin: 0 10px;
-    background-color: #00ADB5;
+.button-container a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #31511E;
     color: white;
     border-radius: 30px;
-    text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.rounded-button:hover {
-    background-color: #008C9E;
+.button-container a:hover {
+    background-color: #FF7B00;
+    transform: scale(1.05);
 }
 
 /* Container untuk Large-Box dan Slideshow */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #2C2F33;
+    max-width: 1450px;
+    margin: 0 auto; /* Mengatur margin luar untuk posisinya di tengah */
+    padding: 40px; /* Menambahkan jarak 20px di semua sisi dalam container */
+    background-color: #1A1A19;
     border-radius: 20px;
     position: relative;
 }
@@ -125,7 +128,7 @@ h2 {
 /* Gaya Kotak Besar */
 .large-box {
     width: 100%;
-    max-width: 1200px;
+    max-width: 12000px;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -141,15 +144,15 @@ h2 {
 }
 
 .large-box:hover {
-    transform: scale(1.03);
+    transform: scale(1.009);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Gaya Kotak Kecil */
 .small-box-container {
     display: flex;
-    gap: 10px;
-    max-width: 1200px;
+    gap: 30px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -172,7 +175,7 @@ h2 {
 }
 
 .small-box:hover {
-    transform: scale(1.03);
+    transform: scale(1.009);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -212,7 +215,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: white;
+    background-color: #31511E;
     border-radius: 0 0 30px 30px;
     padding: 40px 20px; /* Padding lebih besar secara vertikal dan horizontal */
     text-align: center;

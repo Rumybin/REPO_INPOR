@@ -11,7 +11,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #008C9E, #008C9E);
+    background: #F6FCDF;
     color: #333;
     min-height: 100vh;
     display: flex;
@@ -19,10 +19,10 @@ body {
 }
 
 h1 {
-    margin-left: 50px; /* Atur jarak dari kiri */
-    margin-top: 20px; /* Atur jarak dari atas */
-    font-size: 2rem; /* Atur ukuran font jika diperlukan */
-    color: #003366; /* Ubah warna teks sesuai desain */
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #003366;
 }
 
 /* Tombol di atas */
@@ -37,7 +37,7 @@ h1 {
 .button-container a {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #00ADB5;
+    background-color: #31511E;
     color: white;
     border-radius: 30px;
     font-size: 16px;
@@ -56,7 +56,7 @@ h1 {
     left: 30px;
     text-decoration: none;
     padding: 10px 15px;
-    background-color: #00adb5;
+    background-color: #31511E;
     color: white;
     border-radius: 30px;
     transition: background-color 0.3s ease;
@@ -66,38 +66,51 @@ h1 {
     background-color: #FF7B00;
 }
 
-/* Program container using CSS grid */
+/* Program container menggunakan CSS grid */
 .program-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tiga kolom tetap */
-    gap: 20px; /* Jarak antar kotak */
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
+    gap: 20px;
     max-width: 1200px;
-    margin: 20px auto; /* Menempatkan di tengah halaman */
+    padding: 20px;
+    margin: 20px auto;
 }
 
-/* Each program box (kotak) */
+/* Each program box (card style) */
 .program-box {
-    background-color: white;
-    padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
 }
 
 .program-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Styling untuk judul kotak */
-.program-box h3 {
-    font-size: 1.75rem;
+.program-box img {
+    width: 100%;
+    height: auto;
+}
+
+.program-box .content {
+    padding: 16px;
+}
+
+.program-box h2 {
+    font-size: 24px;
+    font-weight: bold;
     color: #003366;
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
+}
+
+.program-box p {
+    font-size: 16px;
+    color: #666;
 }
 
 /* Footer Sticky */

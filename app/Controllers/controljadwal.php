@@ -11,7 +11,7 @@ class controljadwal extends Controller
     {
         // Daftar nama hari dalam bahasa Indonesia
         $namaHari = [
-            'Sunday' => 'Minggu',
+            'Sunday' => 'MINGGU',
             'Monday' => 'Senin',
             'Tuesday' => 'Selasa',
             'Wednesday' => 'Rabu',
@@ -28,6 +28,7 @@ class controljadwal extends Controller
         // Ambil kegiatan ekstrakurikuler berdasarkan hari ini
         $model = new ModelEkstra();
         $data['ekstra_hari_ini'] = $model->getEkstraByDay($hari);
+        $data['hari'] = $hari; // Kirim nama hari ke view
 
         // Kirim data ke view
         return view('jadwal_view', $data);

@@ -7,12 +7,18 @@ use CodeIgniter\Controller;
 
 class contrololim extends Controller
 {
+    protected $model;
+
+    public function __construct()
+    {
+        // Inisialisasi model ModelEkstra
+        $this->model = new ModelEkstra();
+    }
+
     public function index()
     {
-        $model = new ModelEkstra();
-
-        // Ambil data yang memiliki type = 'olim'
-        $data['ekstra_olim'] = $model->getEkstraByType('olim');
+        // Ambil data dengan type 'olim' dan kolom yang diperlukan
+        $data['ekstra_olim'] = $this->model->getEkstraByType('olim');
 
         // Kirim data ke view 'olympiad'
         return view('olympiad', $data);

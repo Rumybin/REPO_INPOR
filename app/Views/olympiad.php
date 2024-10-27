@@ -13,7 +13,7 @@
 <body>
 
     <!-- Tombol Back di pojok kiri atas -->
-    <a href="javascript:history.back()" class="back-button">Back</a>
+    <a href="/" class="back-button">Back</a>
 
     <!-- Tombol Home, Jadwal, Berita di atas -->
     <div class="button-container">
@@ -29,7 +29,11 @@
                 <?php foreach ($ekstra_olim as $ekstra): ?>
                     <div class="program-box">
                         <a href="<?= base_url('/halaman' . esc($ekstra['Nama'])); ?>" style="text-decoration: none; color: inherit;">
-                            <h3><?= esc($ekstra['Nama']) ?></h3>
+                            <img src="<?= base_url('images/' . esc($ekstra['gambar'])); ?>" alt="<?= esc($ekstra['Nama']); ?>" />
+                            <div class="content">
+                                <h2><?= esc($ekstra['Nama']); ?></h2>
+                                <p><?= esc($ekstra['des']); ?></p>
+                            </div>
                         </a>
                     </div>
                 <?php endforeach; ?>
