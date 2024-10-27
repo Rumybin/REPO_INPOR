@@ -10,21 +10,29 @@
 </head>
 
 <body>
-    <header>
-        <h1>INI COBA</h1>
+<header class="header">
+        <div class="logo">
+            <img src="https://arrahmat-bjn.sch.id/wp-content/uploads/2024/09/logo_PPM-removebg-preview-1.png" alt="ARR LOGO">
+        </div>
+        <div class="logo-text">
+            <h3>PPM AR-RAHMAT BOJONEGORO</h3>
+        </div>  
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Prestasi</a></li>
+                <li><a href="#">Galeri</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <button>Login</button>
+        </div>
     </header>
 
     <div class="main-content">
-        <h2>INI EKSTRA</h2>
-
-        <!-- Tombol lonjong -->
-        <!-- Tombol Home, Jadwal, Berita di atas -->
-    <div class="button-container">
-        <a href="/">Home</a>
-        <a href="/jadwal">Jadwal</a>
-        <a href="/berita">Berita</a>
-    </div>
-
+        
         <!-- Slideshow section -->
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -81,26 +89,27 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="logo">
-                <img src="<?= base_url('images/pondok.png'); ?>" alt="Pondok Logo">
-            </div>
-            <div class="social-icons">
-                <a href="https://www.youtube.com/@ArRahmatOfficial" target="_blank">
-                    <img src="<?= base_url('images/youtube.png'); ?>" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/arrahmat_bjn/" target="_blank">
-                    <img src="<?= base_url('images/instagram.png'); ?>" alt="Instagram">
-                </a>
-                <a href="https://wa.me/6289699792391" target="_blank">
-                    <img src="<?= base_url('images/whatsapp.png'); ?>" alt="WhatsApp">
-                </a>
-            </div>
+    <div class="footer-content">
+        <div class="logo">
+            <img src="https://arrahmat-bjn.sch.id/wp-content/uploads/2024/09/logo_PPM-removebg-preview-1.png" 
+                 alt="Pondok Logo" height="100" style="object-fit: contain;">
         </div>
-        <div class="footer-bottom">
-            <p>Torhuja © copyright 2024</p>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@ArRahmatOfficial" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo" width="40">
+            </a>
+            <a href="https://www.instagram.com/arrahmat_bjn/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="40">
+            </a>
+            <a href="https://wa.me/6289699792391" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="40">
+            </a>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <p>PPM ARRAHMAT 2024</p>
+    </div>
+</footer>
 
     <!-- Memuat file JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -4,63 +4,80 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Gaya Umum */
-body {
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    background-color: #F6FCDF;
-    color: black;
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Memastikan logo dan login berada di ujung */
+    background-color: #33b0c9;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(11, 0, 0, 0.1);
 }
 
-/* Header */
-header {
-    width: 100%;
-    background-color: #1A1A19;
-    color: white;
-    height: 90px;
-    text-align: center;
-    line-height: 40px;
+.logo {
+    display: flex;
+    align-items: center;
 }
+
+.logo img {
+    height: 55px; /* Ukuran logo yang lebih kecil */
+    margin-right: 15px; /* Spasi antara logo dan teks */
+}
+
+.logo-text p {
+    margin: 1px 0 0; /* Mengatur margin atas menjadi kecil untuk mengurangi jarak antara h4 dan p */
+    font-size: 14px;
+    color: #ffffff;
+}
+
+nav {
+    flex: 1; /* Memungkinkan nav untuk mengambil ruang yang tersisa di tengah */
+    display: flex;
+    justify-content: center; /* Menempatkan navigasi di tengah */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fafffa;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Menambahkan efek saat hover */
+}
+
+.login {
+    margin-left: auto; /* Menempatkan tombol login di kanan */
+}
+
+.login button {
+    background-color: #347481;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login button:hover {
+    background-color: #376771;
+}
+
+
 
 /* Gaya Konten Utama */
 .main-content {
     text-align: center;
     margin-top: 20px;
-}
-
-h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-h2 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-/* Tombol di atas */
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    gap: 20px;
-}
-
-.button-container a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #31511E;
-    color: white;
-    border-radius: 30px;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button-container a:hover {
-    background-color: #FF7B00;
-    transform: scale(1.05);
 }
 
 /* Container untuk Large-Box dan Slideshow */
@@ -214,35 +231,41 @@ h2 {
 }
 
 /* Footer */
+/* Footer */
 footer {
-    background-color: #31511E;
+    background-color: rgb(96, 229, 255);
     border-radius: 0 0 30px 30px;
-    padding: 40px 20px; /* Padding lebih besar secara vertikal dan horizontal */
+    padding: 40px 20px;
     text-align: center;
-    position: relative;
     margin-top: 40px;
-    height: 300px; /* Menambah tinggi footer */
+    height: auto;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* Membuat konten footer memenuhi tinggi */
+    height: 100%;
 }
 
 .footer-content .logo img {
-    width: 100px;
+    width: 100px; /* Ukuran logo Pondok */
 }
 
 .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Jarak antar ikon */
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a img {
+    width: 40px; /* Menetapkan lebar untuk menjaga proporsi gambar */
+    height: auto; /* Biarkan tinggi menyesuaikan secara otomatis agar gambar tidak gepeng */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+    object-fit: contain; /* Memastikan gambar tetap proporsional */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Perbesar ikon saat di-hover */
 }
 
 .footer-bottom {
