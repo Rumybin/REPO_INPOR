@@ -24,8 +24,4 @@ class contrololim extends Controller
         return view('olympiad', $data);
     }
 
-    public function lelembut()
-    {
-        return view('lelembut');
-    }
 }
