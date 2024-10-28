@@ -11,8 +11,8 @@
     <a href="<?= base_url('/'); ?>" class="back-button">Back</a>
     
     <div class="ekstra-hari-ini">
-        <h1>SEKARANG HARI <?= esc($hari); ?></h1> <!-- Tampilkan nama hari saat ini -->
-        <H1><br> EKSTRA HARI INI ADALAH</H1>
+        <h1><?= esc($hari); ?></h1> <!-- Tampilkan nama hari saat ini -->
+        <H1></H1>
         <?php if (!empty($ekstra_hari_ini)): ?>
             <div class="program-loop-container">
                 <?php foreach ($ekstra_hari_ini as $ekstra): ?>

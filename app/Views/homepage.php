@@ -20,10 +20,12 @@
         <nav>
             <ul>
                 <li><a href="#">Beranda</a></li>
+                <li><a href="/jadwal">Jadwal</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Prestasi</a></li>
                 <li><a href="#">Galeri</a></li>
                 <li><a href="#">Kontak</a></li>
+
             </ul>
         </nav>
         <div class="login">
@@ -77,7 +79,7 @@
                 </div>
             
                 <div class="box small-box">
-                <a href="/diniyah"></a>
+                <a href="/diniyah">
                     <img src="<?= base_url('images/olom.jpg'); ?>" alt="Olom Image">
                     <div class="overlay-text-small">DINIYAH</div>
                 </a>

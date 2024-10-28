@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; /* Memastikan logo dan login berada di ujung */
-    background-color: #33b0c9;
+    background-color: #1E201E ;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(11, 0, 0, 0.1);
 }
@@ -75,6 +75,17 @@ nav a:hover {
 
 
 /* Gaya Konten Utama */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #3C3D37 ;
+    color: #697565 ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-content {
     text-align: center;
     margin-top: 20px;
@@ -233,7 +244,7 @@ nav a:hover {
 /* Footer */
 /* Footer */
 footer {
-    background-color: rgb(96, 229, 255);
+    background-color: #1E201E ;
     border-radius: 0 0 30px 30px;
     padding: 40px 20px;
     text-align: center;

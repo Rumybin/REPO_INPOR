@@ -92,10 +92,14 @@ h1 {
     transform: scale(1.05);
 }
 
+/* Pengaturan ukuran gambar dalam program-box */
 .program-box img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Sesuaikan agar gambar menempati 100% lebar box */
+    height: 300px; /* Tinggi tetap 200px, Anda bisa menyesuaikan sesuai keinginan */
+    object-fit: cover; /* Memastikan gambar menyesuaikan box tanpa distorsi */
+    border-radius: 8px 8px 0 0; /* Menambahkan radius di atas agar gambar menyatu dengan box */
 }
+
 
 .program-box .content {
     padding: 16px;
