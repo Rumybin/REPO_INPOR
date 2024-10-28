@@ -45,7 +45,7 @@ INSERT INTO `db_ekstra` (`Kode`, `Nama`, `Hari`, `des`, `type`, `gambar`) VALUES
 ('02', 'Futsal SMP', 'jumat', 'lorem ipsum', '', ''),
 ('03', 'Badminton', 'jumat', 'lorem ipsum', '', ''),
 ('13', 'Olimpiade IPA', 'Rabu', 'amma anak e ', 'olim', '\\spider1.jpeg'),
-('14', 'Olimpiade IPS', 'Rabu', 'ARIF ARIF ARIF ARIF ARIF ARI FA RFAIJFIAFIJAKFKAFKAJKF', 'olim', '\\spider2.jpeg'),
+('14', 'Olimpiade IPS', 'Rabu', 'ERASE', 'olim', '\\spider2.jpeg'),
 ('15', 'Olimpiade Matematika', 'Rabu', 'lorem ipsum', '', ''),
 ('16', 'Musik SMP', 'Rabu', 'lorem ipsum', '', ''),
 ('17', 'Musik SMA', 'Rabu', 'lorem ipsum', '', ''),
