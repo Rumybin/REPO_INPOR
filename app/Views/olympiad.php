@@ -32,7 +32,6 @@
                             <img src="<?= base_url('images/' . esc($ekstra['gambar'])); ?>" alt="<?= esc($ekstra['Nama']); ?>" />
                             <div class="content">
                                 <h2><?= esc($ekstra['Nama']); ?></h2>
-                                <p><?= esc($ekstra['des']); ?></p>
                             </div>
                         </a>
                     </div>

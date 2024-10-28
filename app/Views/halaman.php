@@ -28,9 +28,6 @@
         <div class="description">
             <p><?= $ekstra['des']; ?></p>
             <ul>
-                <li>Kegiatan 1: Workshop</li>
-                <li>Kegiatan 2: Latihan soal rutin</li>
-                <li>Kegiatan 3: Kompetisi tahunan</li>
             </ul>
         </div>
 
