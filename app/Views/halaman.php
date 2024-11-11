@@ -22,15 +22,12 @@
         <h1 class="title"><?= $ekstra['Nama']; ?></h1>
 
         <!-- Gambar Ekstrakurikuler -->
-        <img src="images/olim.png" alt="Ekstrakurikuler Image" class="activity-image">
+        <img src="<?= base_url('images/' . esc($ekstra['gambar'])); ?>" alt="Ekstrakurikuler Image" class="activity-image">
 
         <!-- Deskripsi Ekstrakurikuler -->
         <div class="description">
             <p><?= $ekstra['des']; ?></p>
             <ul>
-                <li>Kegiatan 1: Workshop</li>
-                <li>Kegiatan 2: Latihan soal rutin</li>
-                <li>Kegiatan 3: Kompetisi tahunan</li>
             </ul>
         </div>
 
